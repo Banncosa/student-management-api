@@ -2,10 +2,13 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Student extends Model
 {   
+    use HasFactory;
+
     //allow these fields to be fillable
     protected $fillable = [
         'firstname',
@@ -17,5 +20,11 @@ class Student extends Model
         'course',
         'section',
     ];
+
+    //associates this to subject
+    public function subjects()
+    {
+        return $this->hasMany(Subject::class);
+    }
 
 }
