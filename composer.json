@@ -7,7 +7,10 @@
     "require": {
         "php": "^8.2",
         "laravel/framework": "^11.0",
+<<<<<<< HEAD
+=======
         "laravel/sanctum": "^4.0",
+>>>>>>> origin/master
         "laravel/tinker": "^2.9"
     },
     "require-dev": {
@@ -21,11 +24,18 @@
     },
     "autoload": {
         "psr-4": {
+<<<<<<< HEAD
+            "App\\": "app/"
+        }
+    }    
+    ,
+=======
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         }
     },
+>>>>>>> origin/master
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"
